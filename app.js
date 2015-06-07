@@ -8,11 +8,11 @@ var MongoClient = require('mongodb').MongoClient;
 
 //MongoDB
 /**If issues connecting to database commeent out beloe code of MongoClient*/
-MongoClient.connect("mongodb://localhost:27017/exampleDB", function(err,db){
+/*MongoClient.connect("mongodb://localhost:27017/exampleDB", function(err,db){
   if(err) throw err;
   console.log('Connected!');
 
-});
+});*/
 
 
 var routes = require('./routes/index');
