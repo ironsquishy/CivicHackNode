@@ -18,6 +18,7 @@ var MongoClient = require('mongodb').MongoClient;
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var about = require('./routes/about');
+var bootstrapTest = require('./routes/bootstrapTest')
 
 var app = express();
 
@@ -35,6 +36,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/about', about);
+app.use('/bootstrapTest', bootstrapTest);
 app.use('/users', users);
 
 // catch 404 and forward to error handler
